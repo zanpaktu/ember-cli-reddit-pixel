@@ -17,9 +17,9 @@ Usage
 Once your environment is configred to include your Pixel id (and the enabled flag is set to true), the Facebook 
  Pixel tracking code will be injected into your index.html file.
  
-A service is provided for simple access to the global `rtd(...)` function inside of your Ember application.
- This service allows you to call the global `rtd(...)` function regardless of your environment - if the 
- Reddit Pixel code hasn't been injected in your head (consequently, the `rtd(...)` function 
+A service is provided for simple access to the global `rdt(...)` function inside of your Ember application.
+ This service allows you to call the global `rdt(...)` function regardless of your environment - if the 
+ Reddit Pixel code hasn't been injected in your head (consequently, the `rdt(...)` function 
  is not available), the service will disregard the function call. 
  
  ```js
@@ -46,13 +46,13 @@ export default Ember.Component.extend({
 	
 	actions: {
 		buttonClicked() {
-			this.get('redditPixel').rtd('track', 'SomeEventName');
+			this.get('redditPixel').rdt('track', 'SomeEventName');
 		}
 	}
 });
 
 ```
 
-In the above example, the global `rtd(...)` function will be called in  the production environment, sending 
- `rtd('track', 'SomeEventName')`. If in the development environment, `rtd('track', 'SomeEventName')` will be
+In the above example, the global `rdt(...)` function will be called in  the production environment, sending 
+ `rdt('track', 'SomeEventName')`. If in the development environment, `rdt('track', 'SomeEventName')` will be
  discarded; only a console.log statement (with the rtd parameters) will be called. 
