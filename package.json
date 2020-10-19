@@ -8,7 +8,10 @@
     "pixel",
     "reddit-pixel"
   ],
-  "repository": "https://github.com/zanpaktu/ember-cli-reddit-pixel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zanpaktu/ember-cli-reddit-pixel.git"
+  },
   "license": "MIT",
   "author": "Leo Camangian Jr",
   "dependencies": {
@@ -44,5 +47,13 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
+  },
+  "bugs": {
+    "url": "https://github.com/zanpaktu/ember-cli-reddit-pixel/issues"
+  },
+  "homepage": "https://github.com/zanpaktu/ember-cli-reddit-pixel#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
