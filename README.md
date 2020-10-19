@@ -14,7 +14,7 @@ ember install ember-cli-reddi-pixel
 Usage
 ------------------------------------------------------------------------------
 
-Once your environment is configred to include your Pixel id (and the enabled flag is set to true), the Facebook 
+Once your environment is configred to include your Pixel id (and the enabled flag is set to true), the Reddit 
  Pixel tracking code will be injected into your index.html file.
  
 A service is provided for simple access to the global `rdt(...)` function inside of your Ember application.
